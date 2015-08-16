@@ -1,0 +1,14 @@
+
+最近看了一下facebook的[[https://facebook.github.io/react/blog/2015/05/01/graphql-introduction.html][GraphQL]], 这个东西像是rest风格接口的一个改进，
+叫“query language”，当然比一般的rest 接口要灵活得多，你可以指定返回的字段，
+很适合写给移动端app用的接口，因为需要支持不同版本的客户端，要么给api加版本号，
+要么api加额外的参数，要么新开api，维护起来比较麻烦。
+最方便的还是让前端直接查数据库，或者像查数据库那样查询数据。
+GraphQL在fb内部应该用了蛮久， 现在[[http://facebook.github.io/graphql/][规范]]也出来了。
+已经有graphqljs，express集成什么的，有兴趣可以[[https://medium.com/@clayallsopp/your-first-graphql-server-3c766ab4f0a2][玩一下]]。
+postgresql甚至有用GraphQL 代替 SQL的[[https://github.com/solidsnack/GraphpostgresQL][玩法]]。
+fb 的新框架[[https://github.com/facebook/relay][relay]] 基于React 和 GraphQL， 过段时间玩玩看。
+
+- [[http://www.tofugu.com/2015/08/07/katana-rocket-launchers-unique-weapons-ancient-japan/][日本古代兵器]]
+- [[http://rivierapartners.com/engineering-salaries-reviewed-3/][湾区工资分析]]
+- 很萌的[[https://howdns.works/][DNS扫盲漫画]]
