@@ -1,0 +1,33 @@
+
+忙里偷闲写了点chicken scheme[fn:1]
+
+chicken的诱人之处在于可以翻译成c，性能稍微提升一点，部署也会方便一点，
+另外相比clojure，memory footprint非常小，
+同类的还有gambit，据说比chicken还要快，但是chicken有 egg[fn:2]，
+还听说chicken社区是lisp里难得的好，不过stackoverflow上回复确实很快很专业[fn:3]
+
+chicken算是比较活跃的 scheme 实现了，但还是门庭冷落，mailing list 上每天两三条的样子，
+egg index 上有大概有1千来个包，基本够用，大概是年代久远的原因，很少代码是托管在github的，
+发布egg必须要发邮件人工审核，很老派的做法，有心写个类似 =go get= 的工具
+
+scheme 的文档散落在各个 srfi(scheme request for implementation) 里，不是很好找，一开始google 了很多，
+用geiser[fn:4] 查看文档很方便，大概是初学的原因，chicken的文档读来非常拗口，相比之下racket的文档非常漂亮，
+geiser还是不错的，支持 guile, racket, chicken，就是有时会卡住
+
+用过elisp，lfe[fn:5]，chicken 后发觉clojure真是一般lisp方言没法比的
+
+- 非常现代的语法
+- 不是所有的 lisp 都是 functional programming/immutable data structure
+- 并发/并行支持
+- 活跃的有创造力的社区（core.async, clojurescript...）
+- 丰富的可靠的类库
+
+算了，还是升级下电脑继续用clojure
+
+[fn:1] [[https://github.com/zweifisch/openstack-client]]
+       [[https://github.com/zweifisch/onion]]
+[fn:2] http://wiki.call-cc.org/chicken-projects/egg-index-4.html
+[fn:3] http://stackoverflow.com/questions/32413317/is-it-possible-to-use-user-defined-fuctions-when-expanding-macro
+       http://stackoverflow.com/questions/32219190/get-the-first-item-of-filtered-list
+[fn:4] http://www.nongnu.org/geiser/
+[fn:5] http://docs.lfe.io/
