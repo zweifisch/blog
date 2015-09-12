@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2015-09-12 Sat 18:48 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="viewport" content="width=device-width, initial-scale=1" />
+<title></title>
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="zf" />
+<link rel="stylesheet" type="text/css" href="markdown.css" />
+</head>
+<body>
+<div id="content">
+<p>
+忙里偷闲写了点chicken scheme<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup>
+</p>
+
+<p>
+chicken的诱人之处在于可以翻译成c，性能稍微提升一点，部署也会方便一点，
+另外相比clojure，memory footprint非常小，
+同类的还有gambit，据说比chicken还要快，但是chicken有 egg<sup><a id="fnr.2" class="footref" href="#fn.2">2</a></sup>，
+还听说chicken社区是lisp里难得的好，不过stackoverflow上回复确实很快很专业<sup><a id="fnr.3" class="footref" href="#fn.3">3</a></sup>
+</p>
+
+<p>
+chicken算是比较活跃的 scheme 实现了，但还是门庭冷落，mailing list 上每天两三条的样子，
+egg index 上有大概有1千来个包，基本够用，大概是年代久远的原因，很少代码是托管在github的，
+发布egg必须要发邮件人工审核，很老派的做法，有心写个类似 <code>go get</code> 的工具
+</p>
+
+<p>
+scheme 的文档散落在各个 srfi(scheme request for implementation) 里，不是很好找，一开始google 了很多，
+用geiser<sup><a id="fnr.4" class="footref" href="#fn.4">4</a></sup> 查看文档很方便，大概是初学的原因，chicken的文档读来非常拗口，相比之下racket的文档非常漂亮，
+geiser还是不错的，支持 guile, racket, chicken，就是有时会卡住
+</p>
+
+<p>
+用过elisp，lfe<sup><a id="fnr.5" class="footref" href="#fn.5">5</a></sup>，chicken 后发觉clojure真是一般lisp方言没法比的
+</p>
+
+<ul class="org-ul">
+<li>非常现代的语法</li>
+<li>不是所有的 lisp 都是 functional programming/immutable data structure</li>
+<li>并发/并行支持</li>
+<li>活跃的有创造力的社区（core.async, clojurescript&#x2026;）</li>
+<li>丰富的可靠的类库</li>
+</ul>
+
+<p>
+算了，还是升级下电脑继续用clojure
+</p>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara"><p class="footpara">
+<a href="https://github.com/zweifisch/openstack-client">https://github.com/zweifisch/openstack-client</a>
+       <a href="https://github.com/zweifisch/onion">https://github.com/zweifisch/onion</a>
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2">2</a></sup> <div class="footpara"><p class="footpara">
+<a href="http://wiki.call-cc.org/chicken-projects/egg-index-4.html">http://wiki.call-cc.org/chicken-projects/egg-index-4.html</a>
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.3" class="footnum" href="#fnr.3">3</a></sup> <div class="footpara"><p class="footpara">
+<a href="http://stackoverflow.com/questions/32413317/is-it-possible-to-use-user-defined-fuctions-when-expanding-macro">http://stackoverflow.com/questions/32413317/is-it-possible-to-use-user-defined-fuctions-when-expanding-macro</a>
+       <a href="http://stackoverflow.com/questions/32219190/get-the-first-item-of-filtered-list">http://stackoverflow.com/questions/32219190/get-the-first-item-of-filtered-list</a>
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.4" class="footnum" href="#fnr.4">4</a></sup> <div class="footpara"><p class="footpara">
+<a href="http://www.nongnu.org/geiser/">http://www.nongnu.org/geiser/</a>
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.5" class="footnum" href="#fnr.5">5</a></sup> <div class="footpara"><p class="footpara">
+<a href="http://docs.lfe.io/">http://docs.lfe.io/</a>
+</p></div></div>
+
+
+</div>
+</div></div>
+</body>
+</html>
